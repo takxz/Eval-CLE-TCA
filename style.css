@@ -57,10 +57,9 @@ button {
 
 .rgpd-validation {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
-    gap: 10px;
 }
 
 .switch {
@@ -83,6 +82,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
+    width: 60px;
     background-color: #ccc;
     transition: .4s;
     border-radius: 34px;
@@ -113,10 +113,11 @@ input:checked + .slider:before {
     color: rgb(0, 0, 0);
     font-size: 14px;
     display: none;
+    margin-left: 20px;
 }
 
 form:invalid .rgpd-message {
-    display: block;
+    display: inline-block;
 }
 
 
@@ -143,4 +144,10 @@ form:invalid .rgpd-message {
 
 .tooltip:hover::after {
     opacity: 1;
+}
+
+#submit-button:hover{
+    background-color: lightblue;
+    transform: scale(1.05);
+    transition: ease-in-out 0.4s;
 }
