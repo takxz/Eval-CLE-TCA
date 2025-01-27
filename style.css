@@ -144,3 +144,9 @@ form:invalid .rgpd-message {
 .tooltip:hover::after {
     opacity: 1;
 }
+
+#submit-button:hover{
+    background-color: lightblue;
+    transform: scale(1.05);
+    transition: ease-in-out 0.4s;
+}
