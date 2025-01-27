@@ -54,53 +54,72 @@ button {
     cursor: pointer;
 }
 
-/* CSS pour le boutton switch */
 
-.switch{
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    width: 60px;
-    height: px;
-    border-radius: 12px;
-    
+.rgpd-validation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    gap: 10px;
 }
 
-.switch input{
-    display: none;
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
     width: 0;
     height: 0;
 }
 
-.slider{
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: #ccc;
     transition: .4s;
-    position:relative;
-    width: 60px;
-    height: 34px;
-    display: block;
+    border-radius: 34px;
 }
 
-.slider:before{
+.slider:before {
     position: absolute;
-    content:"";
+    content: "";
     height: 26px;
     width: 26px;
-    top:4px;
     left: 4px;
-    border-radius: 50%;
+    bottom: 4px;
     background-color: white;
     transition: .4s;
+    border-radius: 50%;
 }
 
-.switch input:checked + .slider:before{
-    transform: translateX(26px);
-}
-
-.switch input:checked + .slider{
+input:checked + .slider {
     background-color: lightblue;
 }
 
+<<<<<<< HEAD
 
+=======
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.rgpd-message {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    display: none;
+}
+
+form:invalid .rgpd-message {
+    display: block;
+}
+>>>>>>> 0c809c9aa8569edc6fa0bbbcc9aff5ce94a1a2f9
 
 
