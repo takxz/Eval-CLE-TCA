@@ -82,6 +82,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
+    width: 60px;
     background-color: #ccc;
     transition: .4s;
     border-radius: 34px;
@@ -112,7 +113,7 @@ input:checked + .slider:before {
     color: rgb(0, 0, 0);
     font-size: 14px;
     display: none;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 form:invalid .rgpd-message {
