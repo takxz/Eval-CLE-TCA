@@ -101,12 +101,6 @@ button {
     background-color: lightblue;
 }
 
-.button-unchecked{
-    display: none;
-}
 
-button:active + input:not(:checked){
-    display: ;
-}
 
 
