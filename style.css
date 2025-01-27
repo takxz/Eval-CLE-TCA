@@ -57,10 +57,9 @@ button {
 
 .rgpd-validation {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
-    gap: 10px;
 }
 
 .switch {
@@ -113,10 +112,11 @@ input:checked + .slider:before {
     color: rgb(0, 0, 0);
     font-size: 14px;
     display: none;
+    margin-left: 10px;
 }
 
 form:invalid .rgpd-message {
-    display: block;
+    display: inline-block;
 }
 
 
