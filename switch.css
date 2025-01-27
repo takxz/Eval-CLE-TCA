@@ -3,7 +3,8 @@
     position: relative;
     overflow: hidden;
     width: 60px;
-    height: 34px;
+    height: px;
+    border-radius: 12px;
     
 }
 
@@ -29,10 +30,15 @@
     width: 26px;
     top:4px;
     left: 4px;
+    border-radius: 50%;
     background-color: white;
     transition: .4s;
 }
 
 .switch input:checked + .slider:before{
     transform: translateX(26px);
+}
+
+.switch input:checked + .slider{
+    background-color: lightblue;
 }
